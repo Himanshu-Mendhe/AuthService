@@ -5,6 +5,8 @@ const bodyParser = require('body-parser');
 const apiRoutes = require('./routes/index');
 const {PORT} = require('./config/server-config');
 
+const db = require('./models/index');
+
 //const {User} = require('./models/index');
 //const bcrypt = require('bcrypt');
 
@@ -33,6 +35,11 @@ const prepareAndStartServer = () => {
        const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImlkIjoiNiIsImlhdCI6MTcwODE1MTA1OSwiZXhwIjoxNzA4MTUxMDY5fQ.bRJQ4HIAF67FgEGgxLBTKefyNFUQje61QJYwgXHwVyw'
        const response = service.verifyToken(token);
        console.log(response);
+       */
+       /*
+       if (process.env.DB_SYNC) {
+        db.sequelize.sync({alter:true});
+       }
        */
     })
 };
