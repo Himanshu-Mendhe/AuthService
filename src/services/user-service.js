@@ -26,7 +26,7 @@ class UserService {
              if(!passwordMatch){
                 console.log("password doesnt match");
                 throw {error: "incorrect password"};
-             }
+            }
 
              const newJwt = this.createToken({email: user.email, id: user.id})
              return newJwt;

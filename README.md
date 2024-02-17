@@ -1,20 +1,6 @@
-- AUTH MICROSERVICE
+note- encryption of password is done in models folder
 
-S1. npm init 
-    npm install
+sign up and sign in logics added.
+plus jwttoken is created using jsonwebtoken npm package and used it.
 
-S2. create .env file with port number
-
-S3. In src/config/config.json write- 
-     ```
-     {
-      "development": {
-      "username": <MYSQL USENAME>,
-      "password": <YOUR MYSQL PASSWORD>,
-      "database": <YOUR DATABASE NAME>,
-      "host": "127.0.0.1",
-      "dialect": "mysql"
-     }
-     }
-     ```
-S4.   npm squelize db:create   
+in sign in - checkapassword, create token logic
