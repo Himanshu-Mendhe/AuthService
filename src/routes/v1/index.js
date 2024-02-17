@@ -8,12 +8,18 @@ router.post(
     '/signup',
     AuthRequestValidatorMiddlewares.validateUserAuth,
     userController.create
-    );
+);
 
 router.post(
     '/signin',
     AuthRequestValidatorMiddlewares.validateUserAuth,
     userController.signIn
-    );
+);
+  
+router.get(
+    '/isauthenticated',
+    userController.isAuthenticated
+)
+
 
 module.exports = router;
