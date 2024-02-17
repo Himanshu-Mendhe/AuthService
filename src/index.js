@@ -8,6 +8,7 @@ const {PORT} = require('./config/server-config');
 //const {User} = require('./models/index');
 //const bcrypt = require('bcrypt');
 
+
 const prepareAndStartServer = () => {
 
     app.use(bodyParser.json());
@@ -17,6 +18,7 @@ const prepareAndStartServer = () => {
  
     app.listen(PORT, async()=> {
         console.log(`server started on port : ${PORT}`);
+        
         /*
         const incomingPassword = 'canBeAnything';
         const user = await User.findByPk(5);
