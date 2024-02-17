@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const apiRoutes = require('./routes/index');
 const {PORT} = require('./config/server-config');
 
-const db = require('./models/index');
+const db = require('./models/index'); 
 
 //const {User} = require('./models/index');
 //const bcrypt = require('bcrypt');
